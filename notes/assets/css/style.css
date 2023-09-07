@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 15px;
+    width: 100%;
+    height: 56px;
+}
+
+header .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+header .hamburger img {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(334deg) brightness(108%) contrast(100%);
+}
+
+header .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #88b895;
+}
+
+.box {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box .takenote {
+    width: 450px;
+    max-height: 250px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    background-color: #fff8c7;
+    border-radius: 8px;
+    text-align: end;
+}
+
+.textbox {
+    width: 100%;
+    max-height: 200px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.textbox::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer;
+}
+  
+.textbox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgb(173, 173, 173); 
+    border-radius: 2px;
+    cursor: pointer;
+}
+   
+.textbox::-webkit-scrollbar-thumb {
+    background: rgb(126, 126, 126); 
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.textbox::-webkit-scrollbar-thumb:hover {
+    background: #696969; 
+    cursor: pointer;
+}
+
+#savenote {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#savenote i {
+    font-size: 28px;
+    color: #696969;
+}
+
+.section2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #88b895;
+    padding: 25px 100px;
+}
+
+
+.note-result {
+    margin: 0;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    width: 300px;
+    border-radius: 8px;
+    height: fit-content;
+    background-color: #fff8c7;
+}
+
+.note-result > .note {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+.note {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: end;
+}
+
+.options button:hover:before {
+    content: "Delete";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.options button {
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.options button img {
+    width: 22px;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(60%) saturate(7%) hue-rotate(53deg) brightness(98%) contrast(89%);
+}
+
+.options button img:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(6%) saturate(12%) hue-rotate(8deg) brightness(98%) contrast(79%);
+}
+
+.section2 {
+  column-count: 4;
+  column-gap: 10px;
+}
